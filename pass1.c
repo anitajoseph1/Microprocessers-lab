@@ -63,6 +63,7 @@ void main(){
    fprintf(intermediate,"%d\t%s\t\t%s\t%s\n",locctr,label,opcode,operand);
    program_length=locctr-start_address;
    printf("Program length: %d",program_length);
+   fprintf(length,"%d",program_length);
    fclose(input);
    fclose(optab);
    fclose(intermediate);
